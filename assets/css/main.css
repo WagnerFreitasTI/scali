@@ -3373,9 +3373,7 @@ body.is-touch .main {
 		display: none;
 	}
 
-	.main.fullscreen {
-		height: auto !important;
-	}
+
 
 	.main.style1 {
 		padding: 4em 15px 4em 15px;
