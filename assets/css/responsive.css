@@ -3,13 +3,69 @@
 @media screen and (min-width: 2090px) and (max-width: 13440px) and (min-height: 1080px) {}
 
 
-@media (max-width: 1465px) {}
+@media (max-width: 1465px) {
+    .text_sec1 {
+        margin-top: 37vh;
+        margin-left: 16vw;
+    }
+}
+
+@media (max-width: 1319px) {
+    .text_sec1 {
+        display: flex;
+        width: 26vw;
+        min-width: 250px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 36vh;
+        position: relative;
+        margin-left: 10vw;
+        line-height: normal;
+    }
+    .par-form {
+        font-size: 1.1em;
+        line-height: 2em;
+    }
+    .right-half {
+        padding-left: 3em;
+        padding-top: 2em;
+        width: 57%;
+        background-color: #be694b;
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+}
 
 
-@media (max-width: 1319px) {}
+@media (max-height: 750px) {
+    #tree {
+        min-height: 500px;
+    }  
+    #five {
+        min-height: 500px;
+    }
+}
 
 
 @media (max-width: 1165px) {
+    .text_sec1 {
+        margin-top: 39vh;
+        margin-left: 0vw;
+    }
+    #tree {
+        min-height: 500px;
+    }
 
 
     .header-vertical-line {
@@ -29,8 +85,23 @@
 
 
 @media (max-width: 960px) {
-    html {
-        font-size: 80%;
+    .text_sec1 {
+        margin-top: 39vh;
+        margin-left: 0vw;
+    }
+    .split-section {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-half {
+        width: 100vw;
+    }
+    .left-half {
+        width: 100vw;
+        height: 42vh;
     }
 
 
@@ -43,35 +114,59 @@
 
 }
 
- 
-
-
-@media (min-height: 601px){
-    .line-header{
+@media (min-height: 601px) {
+    .line-header {
         margin-top: 11vh;
     }
 }
 
-@media (max-height: 600px){
-    .line-header{
+@media (max-height: 600px) {
+    .line-header {
         margin-top: 75px;
     }
+
     .header-vertical-line {
         height: 75PX;
     }
+
     .logo-pag2 {
         top: 92vh;
     }
-}   
+}
 
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .text_sec1 {
+        margin-top: 39vh;
+        margin-left: 0vw;
+    }
+    .split-section {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-half {
+        width: 100vw;
+    }
+    .left-half {
+        width: 100vw;
+        height: 42vh;
+    }
+
+}
+
 @media (max-width: 640px) {
 
 
     body {
-        padding: 0;     
-   
+        padding: 0;
+        
+
+    }
+    .main.style1 {
+        padding: 2px;
     }
     .header-vertical-line {
         display: none;
@@ -92,10 +187,13 @@
         left: 0;
     }
 
-  
+    .text_sec1 {
+        margin-left: 6vw;
+        margin-top: 40%;
+    }
 
     .main.style1 h2 {
-        font-size: 2em;
+        font-size: 4em;
         margin-top: 12vh;
     }
 
@@ -172,15 +270,16 @@
         align-items: center;
     }
 
+
     .left-half {
         width: 100%;
-         min-height: 34vh;
+        min-height: 34vh;
         background-position: 59%;
     }
 
     .right-half {
         padding-left: 2em;
-        padding-top: 2em;
+        padding-top: 3em;
         width: 100%;
         padding-right: 2em;
     }
@@ -254,7 +353,7 @@
         bottom: 6%;
     }
 
-    
+
 
     /* Estilos gerais do footer */
     #footer {
@@ -292,7 +391,7 @@
         position: relative;
     }
 
-  
+
     /* Estilos para o modal de política de privacidade */
     #privacy-modal2 {
         display: none;
@@ -306,6 +405,7 @@
         align-items: center;
         text-align: center;
     }
+
     .side-center {
         bottom: 18%;
         right: 13%;
@@ -318,8 +418,9 @@
         height: auto;
         width: 20%;
         padding-bottom: 1em;
-        
+
     }
+
     /* Estilos para o conteúdo do modal */
     #privacy-content {
         width: 600px;
@@ -340,11 +441,12 @@
         margin: 0 10px;
     }
 
-    .privacy{
+    .privacy {
         width: 100%;
         margin-bottom: 0em;
 
     }
+
     .side-r {
         padding: 12px;
         display: flex;
@@ -358,19 +460,31 @@
         position: relative;
         top: 3%;
     }
-    .logo-fifth{
+
+    .logo-fifth {
         left: 9%;
         height: auto;
         width: 3%;
         max-width: 200px;
         position: relative;
     }
-    .menu-footer  {
+
+    .menu-footer {
         display: none;
     }
+
     .logodown {
         display: none;
     }
 }
 
-
+@media (max-width: 330px) {
+    .text_sec1 {
+        margin-top: 16vh;
+        margin-left: 5vw;
+    }
+    .main.style1 {
+        padding: 2px;
+    }
+    
+}
