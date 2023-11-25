@@ -12,7 +12,43 @@
 	</noscript>
 </head>
 <style>
+	header {
+		transition: background-color 0.9s ease;
+		z-index: 1000;
+	}
 
+	header img {
+		max-width: 100px;
+		height: auto;
+	}
+</style>
+
+<style>
+	section {
+		display: flex;
+		height: 100vh;
+	}
+
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	nav li {
+		margin-bottom: 10px;
+	}
+
+	.content {
+		flex-grow: 1;
+		overflow: hidden;
+	}
+
+	.content img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 </style>
 
 <body class="is-preload">
@@ -27,9 +63,22 @@
 			<a href="#intro">
 				<img src="images/Scale1.png" alt="Logo Scale" class="logo2" />
 			</a>
+			<nav>
+				<ul>
+					<li><a href="#four">PROJECTS</a></li>
+					<li><a href="#one">NEIGHBOURHOOD</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<div style="display: flex;flex-direction: row;justify-content: flex-start;align-items: center;width: 21%;">
+			<img src="images/S.png" alt="Logo 1" class="logo" />
+			<a href="#tree">
+				<button class="button">REGISTER</button>
+			</a>
+
 
 		</div>
-
 	</header>
 
 	<div class="main-content">
@@ -39,14 +88,16 @@
 			<div class="content ">
 				<header>
 					<div class="text_sec1">
-						<h2 class="title-intro"><span style="color: #be694b;">YOUR<br>
+						<h2 style="position: relative;
+					font-size: 5em;"><span style="color: #be694b;">YOUR<br>
 								LIFE</span> IN<br>
 							FOCUS
 						</h2>
 						<p class="parag1" style="color: #0b1b30;"> <Span style="color: #be694b;">
-								STUDIO, 1, 1 & DEN, 2, 2 & DEN<br>
-							</Span>IN LANGLEY CITY, MINUTES TO THE NEW SKYTRAIN</p>
-						<p style="font-size: 1.3em;font-family: 'Beliau';color: black;">
+								STUDIO, 1, 1 & DEN, 2, 2 & DEN<br></Span>
+							IN LANGLEY CITY, MINUTES TO
+							THE NEW SKYTRAIN </p>
+						<p style="font-size: 1.3em;font-family: 'Beliau';">
 							COMING SOON 2024
 						</p>
 					</div>
@@ -55,7 +106,7 @@
 
 				</footer>
 			</div>
-			<a href="#five" class="button style2 down" style="
+			<a href="#one" class="button style2 down" style="
 				position: fixed;
 				bottom: 10px;
 				left: 50%;
@@ -74,7 +125,7 @@
 			">More</a>
 		</section>
 
-		<!-- <section id="one" class="main style2 right dark fullscreen section-nap-scroll">
+		<section id="one" class="main style2 right dark fullscreen section-nap-scroll">
 			<div class=" box style2">
 				<p class="about">Life is a delightful, unpredictable rollercoaster.<br>
 					It’s those days when you’re rushing to work, and you spill coffee on your
@@ -92,22 +143,32 @@
 					<button class=" register">REGISTER NOW</button>
 				</a>
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <section id="two" class="main mainMobile left dark fullscreen style2 section-nap-scroll">
+		<section id="two" class="main mainMobile left dark fullscreen style2 section-nap-scroll">
 
 			<img src="images/S.png" alt="Imagem S" class="s-sec2">
 			<div class="text-logo">YOUR LIFE <span style="font-family: 'Brinnan-Light';
 			 color: #f6f6f6;">
 					IN FOCUS. </span>
 			</div>
-		</section> -->
+		</section>
 
 
+		<section id="tree" class="main right dark section-nap-scroll">
+			<div class="text-sec3">
+				<img src="images/icon-sec3.png" alt="Icon Center" class="icon-center">
+
+				<h3>A QUIET RESIDENTIAL COMMUNITY
+					WHERE UPSIDE HAS NO CEILING.</h3>
+				<p class="about quiet3">A neighbourhood with amenities just a few blocks away,
+					the future skytrain within walking distance and endless hidden
+					gems to discover in Langley's ever growing community.</p>
+			</div>
+		</section>
 
 
-
-		<!-- <section id="four" class="main  right dark fullscreen split-section-horizon section-nap-scroll">
+		<section id="four" class="main  right dark fullscreen split-section-horizon section-nap-scroll">
 			<div id="menu">
 				<h3 style="margin-bottom: 1em; color: #263239; margin-left: 0; text-align: left;">LOCATION</h3>
 				<a href=" #"
@@ -129,7 +190,7 @@
 				<img id="baseImage" src="images/Layers JPEG-PNG/SCALI_MAP_01_BASE.jpg" alt="Base Image">
 				<img id="overlayImage" src="images/Layers JPEG-PNG/SCALE_MAP_FULL.jpg" alt="Overlay Image">
 			</div>
-		</section> -->
+		</section>
 
 		<section id="five" class="main  right dark section-nap-scroll">
 			<div class="text-sec3">
@@ -144,31 +205,15 @@
 			</div>
 		</section>
 
-		<!-- <section id="six" class="main  right dark fullscreen section-nap-scroll">
+		<section id="six" class="main  right dark fullscreen section-nap-scroll">
 			<img src="images/SCALI_01_Hero_Streetscape.jpg" alt="Streetscape" class="Streetscape_image">
 			<h3 class="amenities">ENJOY OUR AMENITIES
 				<img src="images/amenities.png" alt="Amenities" class="amenities">
 			</h3>
 			<img src="images/scale-sec6.png" alt="scale-sec6" class="scale-sec6">
-		</section> -->
-		<section id="six" class="main style1 dark fullscreen section-nap-scroll">
-
 		</section>
 
-		<section id="tree" class="main right dark section-nap-scroll">
-			<div class="text-sec3">
-				<img src="images/icon-sec3.png" alt="Icon Center" class="icon-center">
-
-				<h3>A QUIET RESIDENTIAL COMMUNITY
-					WHERE UPSIDE HAS NO CEILING.</h3>
-				<p class="about quiet3">A neighbourhood with amenities just a few blocks away,
-					the future skytrain within walking distance and endless hidden
-					gems to discover in Langley's ever growing community.</p>
-			</div>
-		</section>
-
-
-		<!-- <section id="seven" class="main  right dark fullscreen section-nap-scroll">
+		<section id="seven" class="main  right dark fullscreen section-nap-scroll">
 			<img src="images/S.png" alt="Imagem S" class="s-sec2">
 			<div class="text-logo">YOUR LIFE <span style="font-family: 'Brinnan-Light';
 			 color: #f6f6f6;">
@@ -183,15 +228,15 @@
 				<img src="images/bags_family.png" alt="bags_family" class="bags_family">
 				<button class="button7">REGISTER TODAY</button>
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <section id="eight" class="main  right dark fullscreen section-nap-scroll">
+		<section id="eight" class="main  right dark fullscreen section-nap-scroll">
 			<img src="images/S.png" alt="Imagem S" class="s-sec8">
 			<div class="text-logo8">YOUR LIFE <span style="font-family: 'Brinnan-Light';
 			 color: #f6f6f6;">
 					IN FOCUS. </span>
 
-				
+				<!-- carrosel -->
 
 				<div class="slideshow-container">
 
@@ -229,21 +274,20 @@
 
 
 
-		</section> -->
+		</section>
 
-		<section id="nine" class="main  right dark fullscreen split-section ">
+		<section id="nine" class="main  right dark fullscreen split-section section-nap-scroll">
 
 
 			<div class="left-half">
 
 			</div>
-			<div class="right-half section-nap-scroll">
+			<div class="right-half">
 				<h4>REGISTER TODAY</h4>
 				<p class="parag3">Make Scale by Scale Projects in Langley your home. Register with our
 					team and we will contact you shortly to provide more infomation. </p>
 
-				<form action="/enviar-formulario" method="post" class="par-form"
-					onsubmit="enviarFormulario(); return false;">
+				<form action="#" method="post" class="par-form">
 					<label for="fname">First name*</label>
 					<input type="text" id="fname" name="fname" class="text-input" required>
 
@@ -260,7 +304,6 @@
 					<input type="text" id="city" name="city" class="text-input" required>
 					<label for="hearAbout">Where did you hear about us:</label>
 					<select id="hearAbout" name="hearAbout" class="text-input" required>
-						<option class="text-input10" value=" "> </option>
 						<option class="text-input10" value="Livabl">Livabl</option>
 						<option class="text-input10" value="Facebook/Instagram">Facebook/Instagram</option>
 						<option class="text-input10" value="Google">Google</option>
@@ -274,16 +317,13 @@
 						<option class="text-input10" value="Other">Other</option>
 					</select>
 					<div class="div-flex text-input" style="align-items: center; padding-right: 15em;">
-						<label for="realtorCheckbox"
-							style="padding-right: 1em;font-weight: bold;font-size: 0.95em;padding-bottom: 0.4em;padding-top: 0.5em;">
+						<label for="realtorCheckbox" style="padding-right: 1em; font-weight: bold; font-size: 0.95em;">
 							ARE YOU A REALTOR?</label>
-						<input type="radio" id="yesRealtorCheckbox" name="areYouRealtor" value="yes"
-							class="radio-check">
+						<input type="checkbox" id="yesRealtorCheckbox" name="areYouRealtor" value="yes">
 						<label for="yesRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">YES</label>
-						<input type="radio" id="noRealtorCheckbox" name="areYouRealtor" value="no" class="radio-check">
+						<input type="checkbox" id="noRealtorCheckbox" name="areYouRealtor" value="no">
 						<label for="noRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">NO</label>
 					</div>
-
 
 					<div class="div-flex text-input">
 						<label for="contact-method" style="padding-right: 1em; font-weight: bold; font-size: 0.95em;">
@@ -293,39 +333,17 @@
 						<label for="checkbox-phone" style="padding-right: 1em;padding-left: 0.3em;">Phone</label>
 
 						<input type="checkbox" id="email" name="contact-method" value="E-mail">
-						<label for="email" style="width: 6em; padding-right: 1em;padding-left: 0.3em;">E-mail</label>
+						<label for="email" style="padding-right: 1em;padding-left: 0.3em;">E-mail</label>
 
 						<input type="checkbox" id="text" name="contact-method" value="Text">
 						<label for="text" style="padding-right: 1em;padding-left: 0.3em;">Text</label>
 					</div>
-					<div class="consentTerm div-flex">
-						<div class="Checkboxers">
-							<input type="checkbox" id="consentCheckbox" name="agreeToConsent" value="yes">
-							<label for="consentCheckbox" class="consentCheck"
-								style="padding-top: 2.1em; padding-left: 0.7em; flex: 1;">Yes,
-								I consent to receiving electronic messages from Scale Projects and Fifth Avenue Real
-								Estate Marketing Ltd. with updates on Scale and other projects that may be of interest
-								to me. If you wish to stop receiving this information at any time, simply check
-								unsubscribe at the bottom of any email received or contact live@scale.ca with
-								unsubscribe in the subject line.</label>
-						</div>
-						<!-- <div class="Checkboxers">
-							<input type="checkbox" id="termsCheckbox" name="agreeToTerms" value="yes">
-							<label for="termsCheckbox" style="padding-left: 0.3em; flex: 1;">I agree to the terms: The
-								information you provide will be kept confidential and used only by Fifth Avenue Real
-								Estate Marketing to enhance your home buying experience and the level of service you
-								receive. The members of our Sales Team are all licensed Real Estate Professionals with
-								Fifth Avenue Real Estate Marketing and therefore are unable to provide representation to
-								potential buyers. To learn more about various forms of Realtor representation and the
-								choices available to you, please <a href="javascript:void(0)">click here.</a></label>
-						</div> -->
-						<div class="Checkboxers">
-							<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
-							<label for="norobot" style="padding-right: 1em;padding-left: 0.7em;">I’m not a
-								robot</label>
-						</div>
-						<!-- <div class="g-recaptcha" data-sitekey="6Le-BxkpAAAAAGNxPPFb68Ik08XiKPVt0LguaOmT"></div> -->
-
+					<div class="div-flex">
+						<input type="checkbox" id="termsCheckbox" name="agreeToTerms" value="yes">
+						<label for="termsCheckbox" style="padding-right: 1em;padding-left: 0.3em;">I agree to the <a
+								href="javascript:void(0)" onclick="openPrivacyModal()">terms</a></label>
+						<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
+						<label for="norobot" style="padding-right: 1em;padding-left: 0.3em;">I’m not a robot</label>
 					</div>
 
 					<div style="display: flex;">
@@ -336,11 +354,7 @@
 
 							<img src="images/CheckGree.png" alt="OK-Check" class="OK-Check" />
 							<h3>
-								Thank you for your interest in scale by Scale Projects. One of our Sales
-								Representatives
-								will be in touch shortly to discuss your how Scale can be your perfect home for
-								every
-								day comfort.
+								YOUR SUBMISSION HAS BEEN RECEIVED. WE'LL BE IN TOUCH SOON!
 							</h3>
 						</div>
 					</div>
@@ -367,7 +381,7 @@
 		</section>
 
 
-		<!-- <section id="ten" class="main  right dark section-nap-scroll">
+		<section id="ten" class="main  right dark section-nap-scroll">
 			<div class="alin10">
 				<div>
 					<p class="text10">
@@ -393,9 +407,12 @@
 					</p>
 				</div>
 			</div>
-		</section> -->
 
-		<!-- <section id="eleven" class="main  right dark fullscreen section-nap-scroll">
+
+
+			<!-- <a href="#six" class="button style2 down anchored">Next</a> -->
+		</section>
+		<section id="eleven" class="main  right dark fullscreen section-nap-scroll">
 			<div class="left-section11">
 				<p class="tale11">
 					<span style="color: #5a7b9c;">
@@ -442,9 +459,11 @@
 					May you find your own balance, and always set sail
 				</p>
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <footer id="footer" class="section-nap-scroll">
+
+
+		<footer id="footer" class="section-nap-scroll">
 
 			<div class="side-l">
 				<div class="menu-footer">
@@ -490,16 +509,16 @@
 			<div class="side-r">
 				<img src="images/logo.png" alt="Logo 1" class="logo logodown">
 
-				
-				 <ul class="icons">
+				<!-- Icons -->
+				<!-- <ul class="icons">
 
 				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands fa-youtube-in"><span class="label">YouTube</span></a></li>
 
-			</ul> 
+			</ul> -->
 
-				
+				<!-- Menu -->
 				<div class="container-icons">
 					<a href="#" target="_blank">
 						<img src="images/icon_fb.png" alt="IconFB">
@@ -530,7 +549,7 @@
 
 			</div>
 
-		</footer>  -->
+		</footer>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -542,61 +561,22 @@
 		<!-- <script src="assets/js/util.js"></script> -->
 		<script src="assets/js/main.js"></script>
 	</div>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
-<script>
-	function enviarFormulario() {
-
-		var formData = {
-			"person": {
-				"firstName": document.getElementById('fname').value,
-				"lastName": document.getElementById('lname').value,
-			},
-			"email": document.getElementById('email').value,
-			"phone": document.getElementById('phone').value,
-			"city": document.getElementById('city').value,
-			"hearAbout": document.getElementById('hearAbout').value,
-			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
-			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
-			"agreeToTerms": document.getElementById('termsCheckbox').checked,
-			"verifyRobot": document.getElementById('norobot').checked,
-			"agreeToConsent": document.getElementById('consentCheckbox').checked
-		};
 
 
-		fetch('http://localhost:3000/enviar-formulario', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(formData),
+<!-- <script>
+	document.addEventListener('scroll', function () {
+		var header = document.getElementById('header');
+		var scrollPosition = window.scrollY;
 
-		})
-			.then(response => {
-				console.log('Resposta do servidor:', response);
-				if (!response.ok) {
-					throw new Error('Erro ao enviar o formulário');
-				}
-				return response.json();
-			})
-			.then(data => {
-				console.log('Resposta do servidor:', data);
-				exibirModalSucesso();
-			})
-			.catch(error => {
-				console.error('Erro:', error);
-
-			});
-	}
-
-	function exibirModalSucesso() {
-
-		var modal = document.querySelector('.check-modal');
-		modal.style.display = 'flex';
-	}
-</script>
-
+		if (scrollPosition > 100) {
+			header.style.backgroundColor = '#0b1b30';
+		} else {
+			header.style.backgroundColor = 'transparent';
+		}
+	});
+</script> -->
 
 
 
@@ -652,8 +632,34 @@
 	}
 </script>
 
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
 
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
 
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+</script>
 
 
 </html>
